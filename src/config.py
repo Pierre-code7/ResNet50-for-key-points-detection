@@ -1,8 +1,8 @@
 import torch
 
 # constant paths
-ROOT_PATH = '/home/pito/Documents/Sensor6ty/keypoints_model/input'
-OUTPUT_PATH = '/content/drive/MyDrive/consultant/PointsRemarquablesDataset/input_key_points/input'
+ROOT_PATH = '/content/drive/MyDrive/consultant/PointsRemarquablesDataset/input_key_points/inputK/inputK'
+OUTPUT_PATH = '/content/drive/MyDrive/consultant/PointsRemarquablesDataset/output_key_points_K'
 
 # learning parameters
 BATCH_SIZE = 32
