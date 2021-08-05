@@ -38,8 +38,8 @@ def dataset_keypoints_plot(data):
     will be show just before training starts. Press `q` to quit the plot and
     start training.
     """
-    plt.figure(figsize=(10, 10))
-    for i in range(9):
+    plt.figure(figsize=(10, 10)) 
+    for i in range(3):
         sample = data[i]
         img = sample['image']
         img = np.array(img, dtype='float32')
