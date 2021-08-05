@@ -7,7 +7,7 @@ from model import FaceKeypointResNet50
 
 model = FaceKeypointResNet50(pretrained=False, requires_grad=False).to(config.DEVICE)
 # load the model checkpoint
-checkpoint = torch.load('../outputs/model.pth')
+checkpoint = torch.load('/content/drive/MyDrive/consultant/PointsRemarquablesDataset/output_key_points_K/model.pth')
 # load model weights state_dict
 model.load_state_dict(checkpoint['model_state_dict'])
 model.eval()
@@ -61,7 +61,7 @@ while(cap.isOpened()):
             break
  
     else: 
-        break
+        break 
         
 
 # release VideoCapture()
