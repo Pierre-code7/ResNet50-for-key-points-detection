@@ -2,6 +2,7 @@ import torch
 
 # constant paths
 ROOT_PATH = '/content/drive/MyDrive/consultant/PointsRemarquablesDataset/input_key_points/inputK/inputK'
+#ROOT_PATH = '/content/drive/MyDrive/consultant/PointsRemarquablesDataset/input_key_points/inputF'
 OUTPUT_PATH = '/content/drive/MyDrive/consultant/PointsRemarquablesDataset/output_key_points_K'
 
 # learning parameters
