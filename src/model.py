@@ -19,7 +19,6 @@ class FaceKeypointResNet50(nn.Module):
                 param.requires_grad = False
             print('Freezing intermediate layer parameters...')
         # change the final layer
-        #self.l0 = nn.Linear(2048, 136)
         self.l0 = nn.Linear(2048, 94)
     def forward(self, x):
         # get the batch size only, ignore (c, h, w)
