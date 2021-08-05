@@ -19,7 +19,7 @@ def train_test_split(csv_path, split):
     return training_samples, valid_samples
     
 class FaceKeypointDataset(Dataset):
-    def __init__(self, samples, path):
+    def __init__(self, samples, path): 
         self.data = samples
         self.path = path
         self.resize = 224
@@ -92,11 +92,11 @@ class FaceKeypointResNet50(nn.Module):
                 param.requires_grad = False
             print('Freezing intermediate layer parameters...')
         # change the final layer
-        self.l0 = nn.Linear(2048, 136)
+        self.l0 = nn.Linear(2048, 94)
     def forward(self, x):
         # get the batch size only, ignore (c, h, w)
         batch, _, _, _ = x.shape
         x = self.model.features(x)
         x = F.adaptive_avg_pool2d(x, 1).reshape(batch, -1)
         l0 = self.l0(x)
-        return l0
+        return l0 
